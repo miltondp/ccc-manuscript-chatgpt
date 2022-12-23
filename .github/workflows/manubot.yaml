@@ -28,6 +28,10 @@ on:
         type: boolean
         description: Check spelling
         default: true
+      REVISE_MANUSCRIPT:
+        type: boolean
+        description: Revise manuscript with OpenAI model
+        default: false
       MANUBOT_USE_DOCKER:
         type: boolean
         description: Use Docker to generate PDF
@@ -41,7 +45,7 @@ jobs:
       # Set SPELLCHECK to true/false for whether to check spelling in this action.
       # For workflow dispatch jobs, this SPELLCHECK setting will be overridden by the user input.
       SPELLCHECK: false
-      BUILD_DOCX: true
+      REVISE_MANUSCRIPT: false
     defaults:
       run:
         shell: bash --login {0}
@@ -58,6 +62,7 @@ jobs:
           echo "BUILD_DOCX=${{ github.event.inputs.BUILD_DOCX }}" >> $GITHUB_ENV
           echo "BUILD_LATEX=${{ github.event.inputs.BUILD_LATEX }}" >> $GITHUB_ENV
           echo "SPELLCHECK=${{ github.event.inputs.SPELLCHECK }}" >> $GITHUB_ENV
+          echo "REVISE_MANUSCRIPT=${{ github.event.inputs.REVISE_MANUSCRIPT }}" >> $GITHUB_ENV
           echo "MANUBOT_USE_DOCKER=${{ github.event.inputs.MANUBOT_USE_DOCKER }}" >> $GITHUB_ENV
       - name: Set Environment Variables
         run: |
@@ -94,6 +99,20 @@ jobs:
       - name: Install Spellcheck
         if: env.SPELLCHECK == 'true'
         run: bash ci/install-spellcheck.sh
+      - name: Install Manubot ChatGPT editor
+        if: env.REVISE_MANUSCRIPT == 'true'
+        run: bash ci/install-manuscript-editor.sh
+      - name: Revise manuscript
+        if: env.REVISE_MANUSCRIPT == 'true'
+        env:
+          PYTHONPATH: libs/
+        run: python ci/run-manuscript-editor.py
+      # - name: Create Pull Request
+      #   if: env.REVISE_MANUSCRIPT == 'true'
+      #   uses: peter-evans/create-pull-request@v4
+      #   with:
+      #     add-paths: |
+      #       content/*.md
       - name: Build Manuscript
         run: bash build/build.sh
       - name: Upload Artifacts
