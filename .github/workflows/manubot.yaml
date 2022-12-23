@@ -104,6 +104,8 @@ jobs:
         run: bash ci/install-manuscript-editor.sh
       - name: Revise manuscript
         if: env.REVISE_MANUSCRIPT == 'true'
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python ci/run-manuscript-editor.py
       # - name: Create Pull Request
       #   if: env.REVISE_MANUSCRIPT == 'true'
