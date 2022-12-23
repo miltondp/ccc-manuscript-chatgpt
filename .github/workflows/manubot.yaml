@@ -45,7 +45,7 @@ jobs:
       # Set SPELLCHECK to true/false for whether to check spelling in this action.
       # For workflow dispatch jobs, this SPELLCHECK setting will be overridden by the user input.
       SPELLCHECK: false
-      REVISE_MANUSCRIPT: false
+      REVISE_MANUSCRIPT: true
     defaults:
       run:
         shell: bash --login {0}
@@ -80,7 +80,7 @@ jobs:
           key: ci-cache-${{ github.ref }}
           restore-keys: |
             ci-cache-${{ env.DEFAULT_BRANCH_REF }}
-      # - name: Install OS packages
+      # - name: Install OS packages for DOCX conversion
       #   if: 
       #   env:
       #     DEBIAN_FRONTEND: noninteractive
@@ -104,8 +104,6 @@ jobs:
         run: bash ci/install-manuscript-editor.sh
       - name: Revise manuscript
         if: env.REVISE_MANUSCRIPT == 'true'
-        env:
-          PYTHONPATH: libs/
         run: python ci/run-manuscript-editor.py
       # - name: Create Pull Request
       #   if: env.REVISE_MANUSCRIPT == 'true'
