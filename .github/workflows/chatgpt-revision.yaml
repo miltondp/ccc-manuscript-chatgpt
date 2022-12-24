@@ -6,6 +6,9 @@ on:
         description: 'Which branch should be revised?'
         default: 'main'
         type: string
+ jobs:
+  chatgpt-revise:
+    name: GPT Revise
     steps:
       - name: Checkout Repo
       - uses: actions/checkout@v3
