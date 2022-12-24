@@ -12,9 +12,21 @@ on:
         with: 
           ref: ${{ inputs.branch }} 
 
-      # Make changes to pull request here
+      - name: Install Manubot ChatGPT editor
+        if: env.REVISE_MANUSCRIPT == 'true'
+        run: bash ci/install-manuscript-editor.sh
+
+      - name: Revise manuscript
+        if: env.REVISE_MANUSCRIPT == 'true'
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python ci/run-manuscript-editor.py
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
         with:
           branch: ${{ inputs.branch }}/chatgpt-revise
+          commit-message: 'GPT revised manuscript'
+          title: 'GPT used to revise manuscript'
+          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+
