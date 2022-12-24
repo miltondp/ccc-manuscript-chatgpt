@@ -1,4 +1,5 @@
 input_id	dealiased_id	standard_id	short_id
+pmid:21310971	pmid:21310971	pubmed:21310971	DUeOcxpt
 pmid:27479844	pmid:27479844	pubmed:27479844	yvIastvc
 doi:10.1073/pnas.1217269109	doi:10.1073/pnas.1217269109	doi:10.1073/pnas.1217269109	14q47vZTA
 pmid:27006077	pmid:27006077	pubmed:27006077	iZjSr8s2
@@ -37,6 +38,7 @@ doi:10.1111/dsji.12233	doi:10.1111/dsji.12233	doi:10.1111/dsji.12233	FhufXP6P
 doi:10.1126/science.1205438	doi:10.1126/science.1205438	doi:10.1126/science.1205438	yCHLC0oS
 doi:10.3389/fgene.2019.01410	doi:10.3389/fgene.2019.01410	doi:10.3389/fgene.2019.01410	1AMcxTw9R
 doi:10.1091/mbc.9.12.3273	doi:10.1091/mbc.9.12.3273	doi:10.1091/mbc.9.12.3273	16ddFzCqe
+doi:10.1109/TVCG.2014.2346248	doi:10.1109/TVCG.2014.2346248	doi:10.1109/tvcg.2014.2346248	ZhJ7VK5R
 pmcid:PMC4828725	pmcid:PMC4828725	pmc:PMC4828725	9ZXy7Ut2
 url:https://hb.flatironinstitute.org	url:https://hb.flatironinstitute.org	url:https://hb.flatironinstitute.org	ZSXf7Pdq
 url:https://hb.flatironinstitute.org/data	url:https://hb.flatironinstitute.org/data	url:https://hb.flatironinstitute.org/data	BgCQnLU6
@@ -44,7 +46,9 @@ pmid:16199517	pmid:16199517	pubmed:16199517	tt0Vdf4C
 doi:10.1101/gr.155697.113	doi:10.1101/gr.155697.113	doi:10.1101/gr.155697.113	mk4SLpDo
 url:https://hb.flatironinstitute.org/gene/9770+9595	url:https://hb.flatironinstitute.org/gene/9770+9595	url:https://hb.flatironinstitute.org/gene/9770+9595	FKQEHB1F
 url:https://hb.flatironinstitute.org/gene/58529+7136	url:https://hb.flatironinstitute.org/gene/58529+7136	url:https://hb.flatironinstitute.org/gene/58529+7136	JpfbR0un
-pmid:30870186	pmid:30870186	pubmed:30870186	2tnZ3sBA
+doi:10.1038/509282a	doi:10.1038/509282a	doi:10.1038/509282a	4QgDZ8bF
+doi:10.1210/endrev/bnaa034	doi:10.1210/endrev/bnaa034	doi:10.1210/endrev/bnaa034	iox25BGw
+doi:10.1038/s41593-021-00806-8	doi:10.1038/s41593-021-00806-8	doi:10.1038/s41593-021-00806-8	1GpiBQk8d
 pmid:17620606	pmid:17620606	pubmed:17620606	1CZbj0k1F
 pmid:17472739	pmid:17472739	pubmed:17472739	104MiBf8H
 pmid:30226837	pmid:30226837	pubmed:30226837	IlPwHaTE
@@ -53,10 +57,6 @@ pmid:29574153	pmid:29574153	pubmed:29574153	efGVmXWt
 pmid:35084622	pmid:35084622	pubmed:35084622	1FQgFkJoJ
 doi:10.1016/j.ajhg.2017.06.005	doi:10.1016/j.ajhg.2017.06.005	doi:10.1016/j.ajhg.2017.06.005	yqBcaXHD
 doi:10.1038/s41576-019-0127-1	doi:10.1038/s41576-019-0127-1	doi:10.1038/s41576-019-0127-1	17B4AigZT
-pmid:123456	pmid:123456	pubmed:123456	Ts2tw6xz
-pmid:12345678	pmid:12345678	pubmed:12345678	ubOpnx1Y
-pmid:29888330	pmid:29888330	pubmed:29888330	vu5gYTFH
-doi:10.1186/s12859-016-1044-6	doi:10.1186/s12859-016-1044-6	doi:10.1186/s12859-016-1044-6	1AyxE5FaS
 doi:10.1145/2833157.2833162	doi:10.1145/2833157.2833162	doi:10.1145/2833157.2833162	189xgFrlN
 url:https://github.com/greenelab/clustermatch-gene-expr	url:https://github.com/greenelab/clustermatch-gene-expr	url:https://github.com/greenelab/clustermatch-gene-expr	190WLq6rx
 doi:10.1093/nar/gks1193	doi:10.1093/nar/gks1193	doi:10.1093/nar/gks1193	tGvcfcsl
