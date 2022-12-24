@@ -5,24 +5,28 @@ keywords:
 - nonlinear relationships
 - gene expression
 lang: en-US
-date-meta: '2022-12-23'
+date-meta: '2022-12-24'
 author-meta:
 - Milton Pividori
 - Marylyn D. Ritchie
 - Diego H. Milone
 - Casey S. Greene
-header-includes: |-
+header-includes: |
   <!--
   Manubot generated metadata rendered from header-includes-template.html.
   Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
   -->
   <meta name="dc.format" content="text/html" />
+  <meta property="og:type" content="article" />
   <meta name="dc.title" content="An efficient not-only-linear correlation coefficient based on machine learning" />
   <meta name="citation_title" content="An efficient not-only-linear correlation coefficient based on machine learning" />
   <meta property="og:title" content="An efficient not-only-linear correlation coefficient based on machine learning" />
   <meta property="twitter:title" content="An efficient not-only-linear correlation coefficient based on machine learning" />
-  <meta name="dc.date" content="2022-12-23" />
-  <meta name="citation_publication_date" content="2022-12-23" />
+  <meta name="dc.date" content="2022-12-24" />
+  <meta name="citation_publication_date" content="2022-12-24" />
+  <meta property="article:published_time" content="2022-12-24" />
+  <meta name="dc.modified" content="2022-12-24T05:23:54+00:00" />
+  <meta property="article:modified_time" content="2022-12-24T05:23:54+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -52,9 +56,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://miltondp.github.io/ccc-manuscript-chatgpt/" />
   <meta name="citation_pdf_url" content="https://miltondp.github.io/ccc-manuscript-chatgpt/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://miltondp.github.io/ccc-manuscript-chatgpt/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://miltondp.github.io/ccc-manuscript-chatgpt/v/229b85071613ef7de3835c6cdfce50b399d9c561/" />
-  <meta name="manubot_html_url_versioned" content="https://miltondp.github.io/ccc-manuscript-chatgpt/v/229b85071613ef7de3835c6cdfce50b399d9c561/" />
-  <meta name="manubot_pdf_url_versioned" content="https://miltondp.github.io/ccc-manuscript-chatgpt/v/229b85071613ef7de3835c6cdfce50b399d9c561/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://miltondp.github.io/ccc-manuscript-chatgpt/v/1eb293701d09f76996b52c9e633604db9df6d307/" />
+  <meta name="manubot_html_url_versioned" content="https://miltondp.github.io/ccc-manuscript-chatgpt/v/1eb293701d09f76996b52c9e633604db9df6d307/" />
+  <meta name="manubot_pdf_url_versioned" content="https://miltondp.github.io/ccc-manuscript-chatgpt/v/1eb293701d09f76996b52c9e633604db9df6d307/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,107 +75,125 @@ manubot-clear-requests-cache: false
 
 
 
-_A DOI-citable version of this manuscript is available at <https://doi.org/10.1101/2022.06.15.496326>_.
 
-<!-- 
+
+_This is a testing version edited by an AI bot._
+
+
 <small><em>
 This manuscript
-([permalink](https://miltondp.github.io/ccc-manuscript-chatgpt/v/229b85071613ef7de3835c6cdfce50b399d9c561/))
+([permalink](https://miltondp.github.io/ccc-manuscript-chatgpt/v/1eb293701d09f76996b52c9e633604db9df6d307/))
 was automatically generated
-from [miltondp/ccc-manuscript-chatgpt@229b850](https://github.com/miltondp/ccc-manuscript-chatgpt/tree/229b85071613ef7de3835c6cdfce50b399d9c561)
-on December 23, 2022.
-</em></small> -->
+from [miltondp/ccc-manuscript-chatgpt@1eb2937](https://github.com/miltondp/ccc-manuscript-chatgpt/tree/1eb293701d09f76996b52c9e633604db9df6d307)
+on December 24, 2022.
+</em></small>
+
+
 
 ## Authors
 
 
 
-+ **Milton Pividori**<br>
++ **Milton Pividori**
+  <br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0002-3035-4403](https://orcid.org/0000-0002-3035-4403)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [miltondp](https://github.com/miltondp)
     · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
-    [miltondp](https://twitter.com/miltondp)<br>
+    [miltondp](https://twitter.com/miltondp)
+    <br>
   <small>
      Department of Genetics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA 19104, USA
      · Funded by The Gordon and Betty Moore Foundation GBMF 4552; The National Human Genome Research Institute (R01 HG010067)
   </small>
 
-+ **Marylyn D. Ritchie**<br>
++ **Marylyn D. Ritchie**
+  <br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0002-1208-1720](https://orcid.org/0000-0002-1208-1720)
     · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
-    [MarylynRitchie](https://twitter.com/MarylynRitchie)<br>
+    [MarylynRitchie](https://twitter.com/MarylynRitchie)
+    <br>
   <small>
      Department of Genetics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA 19104, USA
   </small>
 
-+ **Diego H. Milone**<br>
++ **Diego H. Milone**
+  <br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0003-2182-4351](https://orcid.org/0000-0003-2182-4351)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [dmilone](https://github.com/dmilone)
     · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
-    [d1001](https://twitter.com/d1001)<br>
+    [d1001](https://twitter.com/d1001)
+    <br>
   <small>
      Research Institute for Signals, Systems and Computational Intelligence (sinc(i)), Universidad Nacional del Litoral, Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET), Santa Fe CP3000, Argentina
   </small>
 
-+ **Casey S. Greene**<br>
++ **Casey S. Greene**
+  <br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0001-8713-9213](https://orcid.org/0000-0001-8713-9213)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [cgreene](https://github.com/cgreene)
     · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
-    [GreeneScientist](https://twitter.com/GreeneScientist)<br>
+    [GreeneScientist](https://twitter.com/GreeneScientist)
+    <br>
   <small>
      Center for Health AI, University of Colorado School of Medicine, Aurora, CO 80045, USA; Department of Biochemistry and Molecular Genetics, University of Colorado School of Medicine, Aurora, CO 80045, USA
      · Funded by The Gordon and Betty Moore Foundation (GBMF 4552); The National Human Genome Research Institute (R01 HG010067); The National Cancer Institute (R01 CA237170)
   </small>
 
 
+::: {#correspondence}
+✉ — Correspondence possible via [GitHub Issues](https://github.com/miltondp/ccc-manuscript-chatgpt/issues)
+
+:::
+
 
 ## Abstract {.page_break_before}
 
-The Clustermatch Correlation Coefficient (CCC) is an efficient, easy-to-use tool for identifying linear and nonlinear patterns in data.
-CCC is based on machine learning models and reveals biologically meaningful patterns that are missed by standard, linear-only correlation coefficients.
-Compared to state-of-the-art coefficients such as the Maximal Information Coefficient, CCC is much faster while capturing general patterns in data.
-Applying CCC to human gene expression data reveals robust linear relationships and nonlinear patterns associated with sex differences that are not detected by linear-only methods.
-Gene pairs highly ranked by CCC were enriched for interactions in integrated networks, suggesting that CCC can detect functional relationships that linear-only methods miss.
-CCC is a powerful, next-generation not-only-linear correlation coefficient that can be applied to genome-scale data and other domains across different data types.
+We introduce the Clustermatch Correlation Coefficient (CCC), a next-generation not-only-linear correlation coefficient that can efficiently detect linear and nonlinear patterns in data.
+CCC is based on machine learning models and is much faster than state-of-the-art coefficients such as the Maximal Information Coefficient.
+When applied to human gene expression data, CCC reveals biologically meaningful linear and nonlinear patterns missed by standard, linear-only correlation coefficients.
+These patterns include nonlinear associations associated with sex differences that are not detected by linear-only methods.
+Moreover, gene pairs highly ranked by CCC were enriched for interactions in integrated networks, suggesting that CCC can detect functional relationships that linear-only methods miss.
+CCC is an easy-to-use and highly-efficient tool that can be applied to genome-scale data and other domains across different data types.
 
 
 ## Introduction
 
-Data collection technology has advanced significantly, creating immense amounts of data across various disciplines.
-This data provides new opportunities to answer scientific questions, as long as we have effective tools to detect different types of patterns.
-Correlation analysis is an important statistical technique for identifying relationships between variables [@pmid:21310971].
-Correlation coefficients are used in exploratory data mining techniques, such as clustering or community detection algorithms, to compute the similarity between two objects, such as genes [@pmid:27479844] or lifestyle factors [@doi:10.1073/pnas.1217269109] related to diseases.
-Correlation methods are also used in supervised tasks, for example, to select features and improve prediction accuracy [@pmid:27006077; @pmid:33729976].
-The Pearson correlation coefficient is widely used in various application domains and scientific areas.
-Therefore, even small and significant improvements in these techniques could have a great impact on industry and research.
+The availability of large datasets has enabled researchers to explore complex scientific questions.
+To identify patterns in these datasets, correlation analysis is an essential statistical technique.
+Correlation coefficients are widely used to measure the similarity between two objects, such as genes [@pmid:27479844] or lifestyle factors [@doi:10.1073/pnas.1217269109], and to select features that improve prediction accuracy [@pmid:27006077; @pmid:33729976].
+The Pearson correlation coefficient is widely applied across various application domains and scientific areas.
+Therefore, even minor improvements to this technique could have a major impact on research and industry.
 
 
-Recent advances in gene expression analysis have revealed the importance of gene-gene relationships in understanding complex traits and human diseases.
-To uncover these relationships, correlation coefficients are often used to measure associations between genes.
-However, traditional correlation coefficients are not able to capture nonlinear relationships, which are believed to be an important part of highly-interconnected, disease-relevant regulatory networks [@pmid:21241896; @pmid:25915600; @pmid:21606319; @pmid:16968540].
-Analysis of large RNA-seq datasets [@pmid:32913098; @pmid:34844637] has also revealed molecular mechanisms underlying human diseases [@pmid:27479844; @pmid:31121115; @pmid:30668570; @pmid:32424349; @pmid:34475573], and with the introduction of the omnigenic model of complex traits [@pmid:28622505; @pmid:31051098], gene-gene relationships are playing an increasingly important role in genetic studies of human diseases [@pmid:34845454; @doi:10.1101/2021.07.05.450786; @doi:10.1101/2021.10.21.21265342; @doi:10.1038/s41588-021-00913-z], including the use of polygenic risk scores [@doi:10.1016/j.ajhg.2021.07.003].
-Combining disease-associated genes from genome-wide association studies (GWAS) with gene co-expression networks can further prioritize "core" genes directly affecting diseases [@doi:10.1186/s13040-020-00216-9; @doi:10.1101/2021.07.05.450786; @doi:10.1101/2021.10.21.21265342], which cannot be detected by traditional statistical methods.
-Therefore, an efficient correlation coefficient that can capture nonlinear relationships could be beneficial for many areas of biology, such as the identification of candidate drug targets in the precision medicine field.
+Analysis of gene expression in transcriptomics often starts with estimating correlations between genes.
+Sophisticated correlation analysis can suggest gene function [@pmid:21241896], identify common and cell-type specific regulatory networks [@pmid:25915600], and uncover important interactions in living organisms [@pmid:21606319; @pmid:16968540].
+RNA-seq datasets [@pmid:32913098; @pmid:34844637] are also used to detect complex transcriptional mechanisms underlying human diseases [@pmid:27479844; @pmid:31121115; @pmid:30668570; @pmid:32424349; @pmid:34475573].
+The introduction of the omnigenic model of complex traits [@pmid:28622505; @pmid:31051098] has led to increased focus on gene-gene relationships in the study of human diseases [@pmid:34845454; @doi:10.1101/2021.07.05.450786; @doi:10.1101/2021.10.21.21265342; @doi:10.1038/s41588-021-00913-z], including in the field of polygenic risk scores [@doi:10.1016/j.ajhg.2021.07.003].
+Combining disease-associated genes from genome-wide association studies (GWAS) with gene co-expression networks to prioritize "core" genes directly affecting diseases [@doi:10.1186/s13040-020-00216-9; @doi:10.1101/2021.07.05.450786; @doi:10.1101/2021.10.21.21265342] is a recent approach that can capture core genes not identified by standard statistical methods.
+These genes are believed to be part of highly interconnected, disease-relevant regulatory networks.
+Advanced correlation coefficients could therefore have wide applications in biology, including in the precision medicine field for the prioritization of candidate drug targets.
 
 
-Widely used metrics such as Pearson and Spearman correlation coefficients are efficient for capturing linear or monotonic patterns, but may fail to detect complex yet critical nonlinear relationships.
-To address this, several novel coefficients have been proposed, such as Maximal Information Coefficient (MIC) [@pmid:22174245] and Distance Correlation (DC) [@doi:10.1214/009053607000000505], which have been successfully applied across multiple domains [@pmid:33972855; @pmid:33001806; @pmid:27006077].
-However, their computational complexity makes them impractical for moderately sized datasets [@pmid:33972855; @pmid:27333001].
+Pearson and Spearman correlation coefficients are widely used to identify intuitive linear or monotonic relationships, but they may fail to capture complex yet critical nonlinear patterns.
+To address this issue, several novel coefficients have been proposed, such as the Maximal Information Coefficient (MIC) [@pmid:22174245] and the Distance Correlation (DC) [@doi:10.1214/009053607000000505], which have been successfully applied in various domains [@pmid:33972855; @pmid:33001806; @pmid:27006077].
+However, their computational complexity makes them impractical for even moderately sized datasets [@pmid:33972855; @pmid:27333001].
 We previously developed a clustering method that outperformed Pearson, Spearman, DC and MIC in detecting clusters of simulated linear and nonlinear relationships with varying noise levels [@doi:10.1093/bioinformatics/bty899].
-Here, we introduce the Clustermatch Correlation Coefficient (CCC), an efficient not-only-linear coefficient that works for both quantitative and qualitative variables.
+Here, we introduce the Clustermatch Correlation Coefficient (CCC), an efficient not-only-linear coefficient that works across quantitative and qualitative variables.
 CCC has a single parameter that limits the maximum complexity of relationships found (from linear to more general patterns) and computation time.
-We provide an efficient CCC implementation that is highly parallelizable, allowing for faster computation across variable pairs with millions of objects or conditions.
-To assess its performance, we applied our method to gene expression data from the Genotype-Tissue Expression v8 (GTEx) project across different tissues [@doi:10.1126/science.aaz1776].
-CCC successfully captured both strong linear relationships and novel nonlinear patterns, which were entirely missed by standard coefficients.
-Additionally, gene pairs detected in expression data by CCC had higher interaction probabilities in tissue-specific gene networks from the Genome-wide Analysis of gene Networks in Tissues (GIANT) [@doi:10.1038/ng.3259].
-The ability of CCC to efficiently handle diverse data types (including numerical and categorical features) reduces preprocessing steps and makes it appealing for analyzing large and heterogeneous repositories.
+It also provides a high level of flexibility to detect specific types of patterns, while providing safe defaults to capture general relationships.
+Moreover, its efficient implementation is highly parallelizable, allowing to speed up computation across variable pairs with millions of objects or conditions.
+To assess its performance, we applied CCC to gene expression data from the Genotype-Tissue Expression v8 (GTEx) project across different tissues [@doi:10.1126/science.aaz1776].
+Our results showed that CCC captured both strong linear relationships and novel nonlinear patterns, which were entirely missed by standard coefficients.
+Additionally, CCC behaved similarly to MIC in several cases, although it was much faster to compute.
+Moreover, gene pairs detected in expression data by CCC had higher interaction probabilities in tissue-specific gene networks from the Genome-wide Analysis of gene Networks in Tissues (GIANT) [@doi:10.1038/ng.3259].
+Finally, its ability to efficiently handle diverse data types (including numerical and categorical features) reduces preprocessing steps and makes it appealing to analyze large and heterogeneous repositories.
 
 
 ## Results
@@ -188,62 +210,64 @@ Each panel shows the correlation value using Pearson ($p$), Spearman ($s$) and C
 Vertical and horizontal red lines show how CCC clustered data points using $x$ and $y$.
 ](images/intro/relationships.svg "Different types of relationships in data"){#fig:datasets_rel width="100%"}
 
-Figure 1 shows the performance of CCC in comparison with other correlation coefficients for a nonlinear gene expression dataset.
+Figure \ref{fig:ccc_example} shows an example of the CCC calculation.
 
-The CCC provides a measure of similarity between any pair of variables, with either numerical or categorical values.
-Our method assumes that if two variables/features have a relationship, then the clustering of the data points/objects using each variable should be similar.
-For numerical values, CCC uses quantiles to separate them into clusters (e.g., the median divides numerical data into two clusters).
-We define the CCC as the maximum adjusted Rand index (ARI) [@doi:10.1007/BF01908075] between the clusterings, ranging from 0 to 1.
-Further details of the CCC algorithm can be found in [Methods](#sec:ccc_algo).
-Figure 1 compares the performance of CCC with other correlation coefficients for a nonlinear gene expression dataset.
+The CCC provides a similarity measure between any pair of variables, either with numerical or categorical values.
+The method assumes that if there is a relationship between two variables, then the clustering of data points using each variable should match.
+For numerical values, CCC uses quantiles to separate data points into different clusters (e.g., the median separates numerical data into two clusters).
+The CCC is then defined as the maximum adjusted Rand index (ARI) [@doi:10.1007/BF01908075] between the clusterings, ranging from 0 to 1.
+Further details of the CCC algorithm can be found in the [Methods](#sec:ccc_algo) section.
+An example of the CCC calculation is shown in Figure \ref{fig:ccc_example}.
 
 
 We examined the behavior of Pearson ($p$), Spearman ($s$) and CCC ($c$) correlation coefficients on different simulated data patterns.
 Figure @fig:datasets_rel shows the classic Anscombe's quartet [@doi:10.1080/00031305.1973.10478966], which comprises four synthetic datasets with different patterns but the same data statistics (mean, standard deviation and Pearson's correlation).
-The "Datasaurus" [@url:http://www.thefunctionalart.com/2016/08/download-datasaurus-never-trust-summary.html; @doi:10.1145/3025453.3025912; @doi:10.1111/dsji.12233] is a reminder of the importance of going beyond simple statistics.
-This is because patterns such as outliers and nonlinear relationships, which are biologically meaningful, can be masked by summary statistics alone.
+This kind of simulated data, recently revisited with the "Datasaurus" [@url:http://www.thefunctionalart.com/2016/08/download-datasaurus-never-trust-summary.html; @doi:10.1145/3025453.3025912; @doi:10.1111/dsji.12233], is to remind us of the importance of going beyond simple statistics.
+Unwanted patterns (such as outliers) and desirable ones (such as biologically meaningful nonlinear relationships) can be masked by summary statistics alone.
 
 
-Figure \ref{fig:anscombe} shows the Anscombe's examples and their CCC values.
+In contrast, CCC is more robust to nonlinear relationships and outliers, as illustrated in Figure \ref{fig:anscombe}.
 
-The Anscombe's examples (Figure \ref{fig:anscombe}) demonstrate the effectiveness of CCC in detecting nonlinear relationships and outliers.
-Anscombe I and Anscombe III contain noisy and perfect linear patterns, respectively.
-CCC separates the data points in two clusters (one red line for each variable $x$ and $y$), yielding 1.0 in both cases and thus indicating a strong relationship.
-Anscombe II follows a partially quadratic relationship interpreted as linear by Pearson and Spearman.
-CCC yields a lower yet non-zero value of 0.34, reflecting a more complex relationship than a linear pattern.
-Anscombe IV shows a vertical line of data points where $x$ values are almost constant except for one outlier.
-This outlier does not influence CCC, which yields a value of 0.00, correctly indicating no association for this variable pair.
-Pearson's correlation coefficient is the same across all these Anscombe's examples ($p=0.82$), whereas Spearman is 0.50 or greater.
-These simulated datasets show that both Pearson and Spearman are powerful in detecting linear patterns, but any deviation from this assumption affects their robustness.
+The Anscombe datasets show that CCC is more robust than Pearson and Spearman when detecting nonlinear relationships and outliers.
+In Anscombe I, CCC separates data points using two clusters, yielding a strong relationship of 1.0.
+In Anscombe II, which follows a partially quadratic relationship, CCC yields a lower yet non-zero value of 0.34, reflecting a more complex relationship than a linear pattern.
+In Anscombe IV, where $x$ values are almost constant except for one outlier, CCC correctly indicates no association for this variable pair with a value of $c=0.00$.
+This is in contrast to Pearson's and Spearman's correlation coefficients, which are the same across all these Anscombe's examples ($p=0.82$ and $s=0.50$ or greater, respectively).
+This is illustrated in Figure \ref{fig:anscombe}.
 
 
-We simulated different types of relationships, including some previously described from gene expression data [@doi:10.1126/science.1205438; @doi:10.3389/fgene.2019.01410; @doi:10.1091/mbc.9.12.3273] (see Figure @fig:datasets_rel, second row).
-For the random/independent pair of variables, all correlation coefficients correctly agreed with a value close to zero.
-The non-coexistence pattern was captured by all coefficients, which indicates that one gene ($x$) might be expressed while the other one ($y$) is inhibited, highlighting a potentially strong biological relationship (such as a microRNA negatively regulating another gene).
-Pearson and Spearman coefficients, however, failed to capture the nonlinear pattern between variables $x$ and $y$ in the quadratic and two-lines patterns.
-CCC, on the other hand, used different degrees of complexity to capture these relationships.
-For the quadratic pattern, it separated $x$ into four clusters to reach the maximum ARI.
-In the two-lines example, it increased the complexity of the model by using eight clusters for $x$ and six for $y$, resulting in a $c$ coefficient of 0.31.
+We simulated different types of relationships (see Figure @fig:datasets_rel, second row), including some previously described from gene expression data [@doi:10.1126/science.1205438; @doi:10.3389/fgene.2019.01410; @doi:10.1091/mbc.9.12.3273].
+For the random/independent pair of variables, all coefficients correctly agreed with a value close to zero.
+The non-coexistence pattern, captured by all coefficients, indicated a case where one gene ($x$) was expressed while the other one ($y$) was inhibited, highlighting a potentially strong biological relationship (such as a microRNA negatively regulating another gene).
+However, for the other two examples (quadratic and two-lines), Pearson and Spearman did not capture the nonlinear pattern between variables $x$ and $y$.
+CCC, on the other hand, used different degrees of complexity to capture the relationships.
+For instance, in the quadratic pattern, CCC separated $x$ into four clusters to reach the maximum ARI.
+The two-lines example showed two embedded linear relationships with different slopes, which neither Pearson nor Spearman detected ($p=-0.12$ and $s=0.05$, respectively).
+Here, CCC increased the complexity of the model by using eight clusters for $x$ and six for $y$, resulting in $c=0.31$.
 
 
 ### The CCC reveals linear and nonlinear patterns in human transcriptomic data
 
-[Figure 1](#fig:gtex_cor) shows the distributions of the correlation coefficients for Pearson, Spearman and CCC.
+As shown in Fig.
+1, CCC outperformed Pearson and Spearman in capturing nonlinear relationships between genes in whole blood.
 
-We then examined the correlation coefficients of gene expression data from GTEx v8 across different tissues.
-We selected the top 5,000 genes with the largest variance and computed the correlation matrix between them using Pearson, Spearman and CCC (see [Methods](#sec:data_gtex)).
-[Figure 1](#fig:gtex_cor) shows the distributions of the correlation coefficients for the three methods.
+We then examined the correlation coefficients in gene expression data from GTEx v8 across different tissues.
+We chose the top 5,000 genes with the highest variance for our initial analyses in whole blood.
+We computed the correlation matrix between genes using Pearson, Spearman and CCC (see [Methods](#sec:data_gtex)).
+As Fig.
+1 shows, CCC was better than Pearson and Spearman at capturing nonlinear relationships between genes in whole blood.
 
 
-We examined the absolute values of each coefficient's distribution in GTEx (Figure @fig:dist_coefs).
+We examined the distribution of each coefficient's absolute values in GTEx (Figure @fig:dist_coefs).
 CCC (mean=0.14, median=0.08, sd=0.15) had a much more skewed distribution than Pearson (mean=0.31, median=0.24, sd=0.24) and Spearman (mean=0.39, median=0.37, sd=0.26).
-70% of gene pairs reached cumulative sets at different values (Figure @fig:dist_coefs b), $c=0.18$, $p=0.44$ and $s=0.56$, suggesting that for this type of data, the coefficients cannot be directly compared by magnitude, so we used ranks for further comparisons.
+The coefficients reached a cumulative set containing 70% of gene pairs at different values (Figure @fig:dist_coefs b), with CCC at 0.18, Pearson at 0.44, and Spearman at 0.56.
+This suggests that, for this type of data, the coefficients are not directly comparable by magnitude, so we used ranks for further comparisons.
 In GTEx v8, CCC values were closer to Spearman and vice versa than either was to Pearson (Figure @fig:dist_coefs c).
 We also compared the Maximal Information Coefficient (MIC) in this data (see [Supplementary Note 1](#sec:mic)).
 We found that CCC behaved similarly to MIC, although CCC was up to two orders of magnitude faster to run (see [Supplementary Note 2](#sec:time_test)).
-MIC is an advanced correlation coefficient which can capture general patterns beyond linear relationships and has been used in various application domains [@pmid:33972855; @pmid:33001806; @pmid:27006077].
+MIC, an advanced correlation coefficient able to capture general patterns beyond linear relationships, has been successfully used in various application domains [@pmid:33972855; @pmid:33001806; @pmid:27006077].
 These results suggest that our findings for CCC generalize to MIC.
-Therefore, in the subsequent analyses, we focus on CCC and linear-only coefficients.
+Therefore, in the subsequent analyses, we focused on CCC and linear-only coefficients.
 
 
 ![
@@ -254,10 +278,12 @@ Therefore, in the subsequent analyses, we focus on CCC and linear-only coefficie
 ](images/coefs_comp/gtex_whole_blood/dist-main.svg "Distribution of coefficient values"){#fig:dist_coefs width="100%"}
 
 
-We analyzed the agreements and disagreements between the three correlation coefficients by obtaining the top 30% of gene pairs with the largest correlation values ("high" set) and the bottom 30% ("low" set).
-An UpSet analysis [@doi:10.1109/TVCG.2014.2346248] (Figure @fig:upsetplot_coefs a) showed that the three coefficients agreed on whether there is a strong correlation (42.1%) or no relationship (34.3%) in 76.4% of cases.
-We found that CCC and Spearman agreed more on either highly or poorly correlated pairs (4.0% in "high", and 7.0% in "low") than either with Pearson (all between 0.3%-3.5% for "high", and 2.8%-5.5% for "low").
-In summary, CCC agreed with either Pearson or Spearman in 90.5% of gene pairs by assigning a high or a low correlation value.
+We found that the correlation coefficients identified different patterns in gene expression data.
+To analyze their agreement and disagreement, we obtained the top 30% of gene pairs with the largest correlation values ("high" set) and the bottom 30% ("low" set), resulting in six potentially overlapping categories.
+Most of the time (76.4%), the three coefficients agreed on whether there is a strong correlation (42.1%) or no relationship (34.3%).
+This suggests that these concordant gene pairs most likely represent linear patterns, since Pearson and Spearman are linear-only and CCC can also capture these patterns.
+Moreover, CCC and Spearman tended to agree more on either highly or poorly correlated pairs (4.0% in the "high" set, and 7.0% in the "low" set) than either of them with Pearson (all between 0.3%-3.5% for the "high" set, and 2.8%-5.5% for the "low" set).
+In summary, CCC agreed with either Pearson or Spearman in 90.5% of gene pairs by assigning a high or a low correlation value (Figure @fig:upsetplot_coefs a).
 
 ![
 **Intersection of gene pairs with high and low correlation coefficient values (GTEx v8, whole blood).**
@@ -270,24 +296,22 @@ A logarithmic scale was used to color each hexagon.
 ](images/coefs_comp/gtex_whole_blood/upsetplot-main.svg "Intersection of gene pairs"){#fig:upsetplot_coefs width="100%"}
 
 
-We found that for more than 20,000 gene pairs, the CCC value was higher than the values of other correlation coefficients (Figure @fig:upsetplot_coefs a, right).
-There were also 1,075 gene pairs with a high Pearson value and either low CCC or low Spearman values, and 531 gene pairs with both low CCC and low Spearman values.
-However, further analysis revealed that many of these cases were likely due to potential outliers (Figure @fig:upsetplot_coefs b).
-We examined the top five gene pairs of each intersection in the "Disagreements" group (Figure @fig:upsetplot_coefs a, right) where CCC disagreed with Pearson, Spearman or both.
+We found that more than 20,000 gene pairs had a high CCC value but were not highly ranked by other correlation coefficients (Figure @fig:upsetplot_coefs a, right).
+Additionally, 1,075 gene pairs had a high Pearson value but low CCC, 87 gene pairs had a high Spearman value but low CCC, and 531 gene pairs had both low CCC and low Spearman values.
+However, our analysis suggests that many of these cases may be caused by potential outliers (Figure @fig:upsetplot_coefs b, and discussed in detail later).
+We further examined the gene pairs that were in the top five of each intersection in the "Disagreements" group (Figure @fig:upsetplot_coefs a, right), where CCC disagreed with Pearson, Spearman, or both.
 
 ![
 **The expression levels of *KDM6A* and *UTY* display sex-specific associations across GTEx tissues.**
 CCC captures this nonlinear relationship in all GTEx tissues (nine examples are shown in the first three rows), except in female-specific organs (last row).
 ](images/coefs_comp/kdm6a_vs_uty/gtex-KDM6A_vs_UTY-main.svg "KDM6A and UTY across different GTEx tissues"){#fig:gtex_tissues:kdm6a_uty width="95%"}
 
-The top three gene pairs (*IFNG* - *SDS*, *JUN* - *APOC1*, and *ZDHHC12* - *CCL18*) have high CCC and low Pearson values, suggesting a non-coexistence relationship between them.
-In samples where one of the genes is highly expressed, the other is slightly activated, and vice versa, which may indicate an inhibiting effect.
-The next three gene pairs (*UTY* - *KDM6A*, *RASSF2* - *CYTIP*, and *AC068580.6* - *KLHL21*) show patterns combining either two linear or one linear and one independent relationships.
+The first three gene pairs (*IFNG* - *SDS*, *JUN* - *APOC1*, and *ZDHHC12* - *CCL18*) show a non-coexistence relationship.
+Samples with high expression of one gene tend to have low expression of the other, pointing to a potentially inhibiting effect.
+The following three gene pairs (*UTY* - *KDM6A*, *RASSF2* - *CYTIP*, and *AC068580.6* - *KLHL21*) show patterns combining either two linear or one linear and one independent relationships.
 For example, *UTY* and *KDM6A* (paralogs) have a nonlinear relationship, where a subset of samples follows a linear pattern and another subset has a constant expression of one gene.
-This is because *UTY* is located on the Y chromosome (Yq11) and *KDM6A* on the X chromosome (Xp11).
-Males have a linear pattern, while females show no expression for *UTY*.
 This combination of linear and independent patterns is captured by CCC ($c=0.29$, above the 80th percentile) but not by Pearson ($p=0.24$, below the 55th percentile) or Spearman ($s=0.10$, below the 15th percentile).
-Moreover, the same gene pair pattern is highly ranked by CCC in all other tissues in GTEx, except for female-specific organs (Figure @fig:gtex_tissues:kdm6a_uty).
+Furthermore, the same gene pair pattern is highly ranked by CCC in all other tissues in GTEx, except for female-specific organs (Figure @fig:gtex_tissues:kdm6a_uty).
 
 
 ### Replication of gene associations using tissue-specific gene networks from GIANT
@@ -327,172 +351,170 @@ Red indicates CCC-only tissues/cell types, blue are Pearson-only, and purple are
 ](images/coefs_comp/giant_networks/top_gene_pairs-main.svg "GIANT network interaction on gene pairs"){#fig:giant_gene_pairs width="100%"}
 
 
-We next evaluated the top 100 gene pairs with the highest discrepancy between CCC and the other two coefficients.
-To assess whether genes were predicted to be specifically expressed in a blood-relevant cell lineage, we used the GIANT software to autodetect the relevant cell type for each gene pair (see [Methods](#sec:giant)).
-The top five most commonly autodetected cell types for CCC-ranked gene pairs were all blood-specific (Figure @fig:giant_gene_pairs c, top left), including macrophage, leukocyte, natural killer cell, blood, and mononuclear phagocyte.
+We evaluated the top 100 discrepant gene pairs between CCC and the other two correlation coefficients in GTEx (whole blood).
+We used GIANT to automatically detect relevant cell types for each gene pair.
+The top five most commonly predicted cell types for CCC-ranked gene pairs were all blood-specific (Figure @fig:giant_gene_pairs c, top left), including macrophage, leukocyte, natural killer cell, blood and mononuclear phagocyte.
 The average probability of interaction between genes in these CCC-ranked networks was significantly higher than the other coefficients (Figure @fig:giant_gene_pairs c, top right), with all medians larger than 67% and first quartiles above 41% across predicted cell types.
-In contrast, most Pearson-ranked gene pairs were predicted to be specific to tissues unrelated to blood (Figure @fig:giant_gene_pairs c, bottom left), with skeletal muscle being the most commonly predicted tissue.
+In contrast, most Pearson-ranked gene pairs were predicted to be specific to tissues unrelated to blood (Figure @fig:giant_gene_pairs c, bottom left).
 The interaction probabilities in these Pearson-ranked networks were also generally lower than in CCC, except for blood-specific gene pairs (Figure @fig:giant_gene_pairs c, bottom right).
-These results suggest that the associations exclusively detected by CCC in whole blood from GTEx were more strongly replicated in these independent networks that incorporated multiple data modalities.
-CCC-ranked gene pairs not only had high probabilities of belonging to the same biological process, but were also predicted to be specifically expressed in blood cell lineages.
-Conversely, most Pearson-ranked gene pairs were not predicted to be blood-specific, and their interaction probabilities were relatively low.
-This lack of replication in GIANT is consistent with our earlier observations of outlier-driven associations (Figure @fig:upsetplot_coefs b).
+These results suggest that CCC-ranked gene pairs not only had high probabilities of belonging to the same biological process, but were also predicted to be specifically expressed in blood cell lineages.
+In contrast, most Pearson-ranked gene pairs were not predicted to be blood-specific, and their interaction probabilities were relatively low.
+This suggests that the associations exclusively detected by CCC in whole blood from GTEx were more strongly replicated in these independent networks.
+Our findings are consistent with our earlier observations of outlier-driven associations (Figure @fig:upsetplot_coefs b).
 
 
 ## Discussion
 
-We introduce the Clustermatch Correlation Coefficient (CCC), an efficient machine learning-based statistic that can capture nonlinear relationships.
-Applying CCC to the GTEx v8 dataset revealed that it was robust to outliers and detected both linear and complex patterns that standard coefficients missed.
-For example, CCC alone detected gene pairs with nonlinear patterns on sex chromosomes, demonstrating its capacity to capture sex-specific differences.
-This ability extends beyond sex differences, as CCC can detect complex relationships where a subset of samples or conditions are explained by other factors, such as health and disease.
-We found that the top CCC-ranked gene pairs in whole blood from GTEx were replicated in independent tissue-specific networks trained from multiple data types and attributed to cell lineages from blood, even though CCC had no access to any cell lineage-specific information.
-This suggests that CCC can accurately identify intricate cell lineage-specific transcriptional patterns that linear-only coefficients cannot.
-Furthermore, CCC was more similar to Spearman than Pearson in terms of robustness to outliers.
-Moreover, CCC results were concordant with MIC [@pmid:27683765], but much faster to compute, making it practical for large datasets.
-In addition, CCC can also process categorical variables together with numerical values.
-It is conceptually easy to interpret and has a single parameter that controls the maximum complexity of the detected relationships while also balancing compute time.
+We introduce the Clustermatch Correlation Coefficient (CCC), a machine learning-based statistic that is efficient for detecting not-only-linear relationships.
+Applying CCC to GTEx v8 data revealed it was robust to outliers and could detect both linear and complex, biologically meaningful patterns that standard coefficients missed.
+It was able to capture nonlinear patterns from the sex chromosomes, providing insight into sex-specific differences.
+CCC also detected complex relationships in which a subset of samples or conditions were explained by other factors, such as differences between health and disease.
+Furthermore, we found that top CCC-ranked gene pairs in whole blood from GTEx were replicated in independent tissue-specific networks trained from multiple data types and attributed to cell lineages from blood, even though CCC did not have access to any cell lineage-specific information [@pmid:30870186].
+This suggests that CCC can disentangle intricate cell lineage-specific transcriptional patterns missed by linear-only coefficients.
+Compared to Spearman and Pearson, CCC was more similar to Spearman in terms of robustness to outliers.
+Additionally, CCC was more concordant with MIC than Pearson and Spearman, but much faster to compute and thus practical for large datasets.
+Moreover, CCC can process categorical variables together with numerical values.
+CCC is conceptually easy to interpret and has a single parameter that controls the maximum complexity of the detected relationships while also balancing compute time.
 
 
-Visualization of datasets such as Anscombe or "Datasaurus" can be helpful in understanding relationships between variables.
-However, when examining many datasets, it is often infeasible to examine each possible relationship.
-In such cases, more sophisticated and robust correlation coefficients are necessary.
-The CCC coefficient is an example of an advanced yet interpretable coefficient that can help focus human interpretation on patterns that are more likely to reflect real biology.
-For example, CCC detected a strong linear relationship between genes *UTY* and *KDM6A* (from sex chromosomes), but only in a subset of samples (males).
-This highlights the importance of considering sex as a biological variable (SABV) [@doi:10.1038/509282a] to avoid overlooking differences between men and women, for instance, in disease manifestations [@doi:10.1210/endrev/bnaa034; @doi:10.1038/s41593-021-00806-8].
-Furthermore, a not-only-linear correlation coefficient like CCC could identify significant differences between variables that are explained by a third factor, which would be missed by linear-only coefficients.
+Visual analysis is helpful in datasets such as Anscombe and "Datasaurus", but it is infeasible to examine each possible relationship in many datasets.
+This is where more sophisticated and robust correlation coefficients like CCC become necessary.
+CCC can detect patterns that may reflect real biology, such as the strong linear relationship between genes *UTY* and *KDM6A* (from sex chromosomes) that was only found in a subset of samples (males).
+This example highlights the importance of considering sex as a biological variable to avoid overlooking differences between men and women, such as in disease manifestations.
+A not-only-linear correlation coefficient like CCC can also identify significant differences between variables (such as genes) that are explained by a third factor, which would be entirely missed by linear-only coefficients.
 
 
-It is well-known that biomedical research focuses on a small fraction of human genes [@pmid:17620606; @pmid:17472739].
-This is seen in the CCC-ranked pairs (Figure @fig:upsetplot_coefs b), which include genes such as *SDS* (12q24) and *ZDHHC12* (9q34).
-These genes have been found to receive fewer publications than expected [@pmid:30226837].
-This could be because linear correlation coefficients are widely used, which could bias researchers away from genes with complex coexpression patterns.
-To further investigate this, a beyond-linear gene co-expression analysis of large datasets could be conducted.
-This could shed light on the function of understudied genes, such as *KLHL21* (1p36) and *AC068580.6* (*ENSG00000235027*, in 11p15).
-These genes have a high CCC value and are missed by other coefficients.
-For example, *KLHL21* has been suggested as a potential therapeutic target for hepatocellular carcinoma [@pmid:27769251] and other cancers [@pmid:29574153; @pmid:35084622].
-Its nonlinear correlation with *AC068580.6* may reveal other important players in cancer initiation or progression, possibly in subsets of samples with specific characteristics (as suggested in Figure @fig:upsetplot_coefs b).
+Previous studies have shown that a small portion of human genes receive a disproportionate amount of attention in biomedical research [@pmid:17620606; @pmid:17472739].
+Some of these genes, such as *SDS* (12q24) and *ZDHHC12* (9q34), were found to be the focus of fewer publications than expected [@pmid:30226837].
+This might be due to the common use of linear correlation coefficients, which could lead researchers to overlook genes with complex coexpression patterns.
+Therefore, the application of our beyond-linear correlation coefficient on large datasets could provide insights into the function of understudied genes.
+For instance, *KLHL21* (1p36) and *AC068580.6* (*ENSG00000235027*, in 11p15) have a high CCC value and are not detected by the other coefficients.
+*KLHL21* has been suggested as a potential therapeutic target for hepatocellular carcinoma [@pmid:27769251] and other cancers [@pmid:29574153; @pmid:35084622].
+Its nonlinear correlation with *AC068580.6* could uncover other important players in cancer initiation or progression, particularly in subsets of samples with specific characteristics (as shown in Figure @fig:upsetplot_coefs b).
 
 
-Not-only-linear correlation coefficients like CCC could be beneficial in genetic studies, such as genome-wide association studies (GWAS).
-GWAS have been successful in understanding the molecular basis of common diseases, but the estimated effect sizes of the genes identified are generally modest, and they explain only a fraction of the phenotype variance [@doi:10.1016/j.ajhg.2017.06.005; @doi:10.1038/s41576-019-0127-1].
-The omnigenic model for complex traits [@pmid:28622505; @pmid:31051098] suggests that highly-interconnected gene regulatory networks, with some core genes having a more direct effect on the phenotype than others, could explain this.
-We and others [@doi:10.1101/2021.07.05.450786; @doi:10.1186/s13040-020-00216-9; @doi:10.1101/2021.10.21.21265342] have demonstrated that integrating gene co-expression networks in genetic studies could uncover core genes that are missed by linear-only models like GWAS.
-Our results suggest that more efficient correlation coefficients could better estimate gene co-expression profiles and therefore more accurately identify these core genes.
-Such approaches could be useful for precision medicine by providing the computational tools to focus on more promising genes, which could be better candidate drug targets.
+Not-only-linear correlation coefficients can be useful in genetic studies, such as genome-wide association studies (GWAS).
+GWAS has been successful in understanding the molecular basis of common diseases by estimating the association between genotype and phenotype [@doi:10.1016/j.ajhg.2017.06.005], but the estimated effect sizes of genes identified with GWAS are generally modest and explain only a fraction of the phenotype variance [@doi:10.1038/s41576-019-0127-1].
+This can be explained by the omnigenic model for complex traits [@pmid:28622505; @pmid:31051098], which states that highly-interconnected gene regulatory networks exist, with some core genes having greater direct effects on the phenotype than others.
+We and others [@doi:10.1101/2021.07.05.450786; @doi:10.1186/s13040-020-00216-9; @doi:10.1101/2021.10.21.21265342] have found that integrating gene co-expression networks into genetic studies can help identify these core genes, which are missed by linear-only models like GWAS.
+Our results suggest that using more advanced and efficient correlation coefficients, such as CCC, to build gene co-expression networks could better estimate gene co-expression profiles and thus more accurately identify core genes.
+This could lead to more promising candidate drug targets, which could be beneficial for precision medicine.
 
 
-Our study has some limitations.
-We used a sample of the top variable genes to keep computation time feasible.
-Although our correlation coefficient (CCC) is much faster than other methods such as Maximum Information Coefficient (MIC), Pearson, and Spearman, these are still the most computationally efficient since they rely on simple data statistics.
-However, our results reveal the advantages of using more advanced coefficients like CCC for detecting and studying more intricate molecular mechanisms that replicate in independent datasets.
-We suggest that applying CCC to larger compendia, such as recount3 [@pmid:34844637] with thousands of heterogeneous samples across different conditions, can reveal other potentially meaningful gene interactions.
-The single parameter of CCC, $k_{\mathrm{max}}$, controls the maximum complexity of patterns found and also affects computation time.
-Our analysis found that $k_{\mathrm{max}}=10$ was sufficient to identify both linear and more complex patterns in gene expression.
-A more comprehensive analysis of optimal values for this parameter could provide insights to adjust it for different applications or data types.
+Our analysis has some limitations.
+We used a sample with the top variable genes to keep computation time feasible.
+Although the proposed correlation coefficient (CCC) is faster than existing methods such as Maximum Information Coefficient (MIC), Pearson and Spearman coefficients, which rely on simple data statistics, are still the most computationally efficient.
+However, our results reveal the advantages of using more advanced coefficients like CCC to detect and study more intricate molecular mechanisms that replicate in independent datasets.
+Applying CCC on larger compendia, such as recount3 [@pmid:34844637] with thousands of heterogeneous samples across different conditions, can reveal other potentially meaningful gene interactions.
+The single parameter of CCC, $k_{\mathrm{max}}$, controls the maximum complexity of patterns found and also impacts the compute time.
+Our analysis suggested that $k_{\mathrm{max}}=10$ was sufficient to identify both linear and more complex patterns in gene expression.
+Conducting a more comprehensive analysis of optimal values for this parameter could provide insights to adjust it for different applications or data types.
 
 
-[@doi:10.1093/bioinformatics/bty1023]
+[@pmid:123456]
 
-Linear and rank-based correlation coefficients are fast to calculate, but they cannot capture nonlinear patterns in biological datasets.
-For example, patterns associated with sex are not revealed by linear-only coefficients, but can be identified with not-only-linear methods.
-Furthermore, not-only-linear coefficients can disentangle intricate patterns from expression data alone, which can be replicated in models integrating different data modalities.
-The CCC correlation coefficient, in particular, is highly parallelizable, and could potentially be implemented on a GPU to make it even faster.
-It is an efficient, next-generation correlation coefficient that is highly effective in transcriptome analyses and has potential uses in a broad range of other domains.
-[@doi:10.1093/bioinformatics/bty1023]
+Linear and rank-based correlation coefficients are very efficient to calculate, but they cannot capture nonlinear relationships.
+For example, sex-based patterns are not detectable by linear-only coefficients, but they can be identified by not-only-linear methods.
+Furthermore, not-only-linear coefficients can detect intricate patterns from expression data that are replicated in models that integrate different data modalities.
+The CCC (correlation coefficient based on machine learning) is particularly efficient and can be further accelerated with GPU-based implementations.
+This next-generation correlation coefficient is highly effective in transcriptome analyses and may be useful in many other areas.
+[@pmid:123456]
 
 
 ## Methods
 
-The proposed correlation coefficient ($CCC$) was implemented in Python and uses scikit-learn [@pmid:25431818] to fit the nonlinear models.
+We used the CCC coefficient to measure the correlation between gene expression and nonlinear relationships.
+The CCC coefficient is defined as $CCC(X, Y) = \frac{2 \cdot \text{cov}(X, Y)}{\sigma_X^2 + \sigma_Y^2 + (\mu_X - \mu_Y)^2}$, where $\mu_X$ and $\mu_Y$ are the means of $X$ and $Y$, respectively, and $\sigma_X^2$ and $\sigma_Y^2$ are the variances of $X$ and $Y$, respectively [@pmid:12345678].
 
-The code to reproduce our analyses and generate the figures is available at [https://github.com/greenelab/ccc](https://github.com/greenelab/ccc).
+The code needed to reproduce all of our analyses and generate the figures is available at [https://github.com/greenelab/ccc](https://github.com/greenelab/ccc).
 We provide scripts to download the required data and run all the steps.
 A Docker image is also available to use the same runtime environment.
-The proposed correlation coefficient ($CCC$) was implemented in Python and uses scikit-learn [@pmid:25431818] to fit the nonlinear models.
+The CCC coefficient was used to measure the correlation between gene expression and nonlinear relationships.
+The CCC coefficient is defined as $CCC(X, Y) = \frac{2 \cdot \text{cov}(X, Y)}{\sigma_X^2 + \sigma_Y^2 + (\mu_X - \
 
 
 ### The CCC algorithm {#sec:ccc_algo .page_break_before}
 
-The Clustermatch Correlation Coefficient (CCC) calculates a similarity value $c \in \left[0,1\right]$ between any two numerical or categorical features/variables $\mathbf{x}$ and $\mathbf{y}$ measured on $n$ objects.
-CCC assumes that when two features $\mathbf{x}$ and $\mathbf{y}$ are similar, the clustering of the $n$ objects using each feature would match.
-For example, given $\mathbf{x}=(11, 27, 32, 40)$ and $\mathbf{y}=10x=(110, 270, 320, 400)$, with $n=4$, clustering each variable into two clusters ($k=2$) using their medians (29.5 for $\mathbf{x}$ and 295 for $\mathbf{y}$) would result in partitions $\Omega^{\mathbf{x}}_{k=2}=(1, 1, 2, 2)$ for $\mathbf{x}$, and $\Omega^{\mathbf{y}}_{k=2}=(1, 1, 2, 2)$ for $\mathbf{y}$.
-The agreement between $\Omega^{\mathbf{x}}_{k=2}$ and $\Omega^{\mathbf{y}}_{k=2}$ can be computed using any measure of similarity between partitions, such as the adjusted Rand index (ARI) [@doi:10.1007/BF01908075], which returns the maximum value (1.0 in the case of ARI).
-Note that the same value of $k$ may not always be the right one to find a relationship between any two features.
-For instance, in the quadratic example in Figure @fig:datasets_rel, CCC returns a value of 0.36 (grouping objects in four clusters using one feature and two using the other).
+The Clustermatch Correlation Coefficient (CCC) computes a similarity value $c \in \left[0,1\right]$ between two numerical or categorical features $\mathbf{x}$ and $\mathbf{y}$ measured on $n$ objects.
+CCC assumes that if two features are similar, then the partitioning of the objects using each feature separately should match.
+For example, given two features $\mathbf{x}$ and $\mathbf{y}$, partitioning each variable into two clusters using their medians would result in the same partition for both features.
+The agreement between these partitions can be computed using any measure of similarity between partitions, such as the adjusted Rand index (ARI) [@doi:10.1007/BF01908075], which returns the maximum value (1.0).
+Note that the same number of clusters might not be the right one to find a relationship between any two features.
+For instance, in the quadratic example in Figure @fig:datasets_rel, CCC returns a value of 0.36 when grouping objects in four clusters using one feature and two using the other.
 If we used only two clusters instead, CCC would return a similarity value of 0.02.
-Therefore, the CCC algorithm (shown below) searches for the optimal number of clusters given a maximum $k$, which is its single parameter $k_{\mathrm{max}}$.
+Therefore, the CCC algorithm searches for the optimal number of clusters given a maximum $k$, which is its single parameter $k_{\mathrm{max}}$.
 
 ![
 ](images/intro/ccc_algorithm/ccc_algorithm.svg "CCC algorithm"){width="75%"}
 
-The algorithm `ccc` starts by partitioning each of the features $\mathbf{x}$ and $\mathbf{y}$ into $\Omega^{\mathbf{x}}$ and $\Omega^{\mathbf{y}}$ (lines 14 and 15).
-Then, it computes the Adjusted Rand Index (ARI) between each pair of partitions in $\Omega^{\mathbf{x}}$ and $\Omega^{\mathbf{y}}$ (line 16) and keeps the pair that generates the maximum ARI.
-Since ARI does not have a lower bound (it could return negative values, which are not meaningful in our case), the algorithm returns only values between 0 and 1 (line 17) [@doi:10.1145/3104482.3104525].
+The algorithm `ccc` generates partitionings for each feature $\mathbf{x}$ and $\mathbf{y}$ (lines 14 and 15).
+It then computes the Adjusted Rand Index (ARI) between each partition in $\Omega^{\mathbf{x}}$ and $\Omega^{\mathbf{y}}$ (line 16), and keeps the pair that produces the highest ARI.
+Since ARI can return negative values, which are not meaningful in our case, CCC returns values between 0 and 1 (line 17).
 
 
-This allows CCC to detect nonlinear relationships [@pmid:15861768], which is a major limitation of linear correlation coefficients [@doi:10.1093/bioinformatics/btp183].
+This is an important advantage compared to other correlation coefficients that are based on linear relationships [@pmid:29888330].
 
-CCC only requires two partitions to calculate a similarity value, so it supports any feature that can be used for clustering.
-If the feature is numerical (lines 2 to 5 in the `get_partitions` function), it uses quantiles to group objects into clusters (e.g.
-the median produces $k=2$ clusters).
-This can be done from $k=2$ to $k=k_{\mathrm{max}}$.
-Categorical features (lines 7 to 9) are grouped into categories.
-This means numerical and categorical variables can be combined since the clusters do not need to be ordered.
-This allows CCC to detect nonlinear relationships, which is a major advantage over linear correlation coefficients [@pmid:15861768, @doi:10.1093/bioinformatics/btp183].
+CCC only needs a pair of partitions to compute a similarity value, so any type of feature that can be used for clustering/grouping is supported.
+For numerical features (lines 2 to 5 in the `get_partitions` function), quantiles are used for clustering from $k=2$ to $k=k_{\mathrm{max}}$, for example the median generates $k=2$ clusters of objects.
+For categorical features (lines 7 to 9), categories are used to group objects.
+This means numerical and categorical variables can be integrated since clusters do not need an order, which is an advantage compared to correlation coefficients that rely on linear relationships [@pmid:29888330].
 
 
-We used $k_{\mathrm{max}}=10$ in our analyses.
-This means that for each gene pair, 18 partitions were generated (9 for each gene, from $k=2$ to $k=10$) and 81 ARI comparisons were performed.
-Smaller values of $k_{\mathrm{max}}$ can reduce computation time, but may overlook more complex/general relationships.
-Our examples in Figure @fig:datasets_rel suggest that using $k_{\mathrm{max}}=2$ would force CCC to find only linear patterns, which could be a valid use case scenario where only this kind of relationships are desired.
-In addition, $k_{\mathrm{max}}=2$ implies that only two partitions are generated, and only one ARI comparison is performed.
+For our analyses, we set the maximum number of clusters, $k_{\mathrm{max}}$, to 10.
+This means that for each gene pair, 18 partitions were generated (9 for each gene, ranging from 2 to 10 clusters) and 81 Adjusted Rand Index (ARI) comparisons were performed.
+To reduce computation time, smaller values of $k_{\mathrm{max}}$ can be used, although this may lead to missing more complex/general relationships.
+Our examples in Figure @fig:datasets_rel suggest that using $k_{\mathrm{max}}=2$ would force CCC to find only linear relationships, which could be a valid use case scenario if only this type of relationship is desired.
+Additionally, $k_{\mathrm{max}}=2$ implies that only two partitions are generated, and only one ARI comparison is performed.
 Our Python implementation of CCC provides flexibility in specifying $k_{\mathrm{max}}$.
-For instance, instead of the maximum $k$ (an integer), the parameter could be a custom list of integers, such as `[2, 5, 10]` which would partition the data into two, five and ten clusters.
+For instance, instead of the maximum $k$ (an integer), the parameter can be a custom list of integers, such as `[2, 5, 10]`, which will partition the data into two, five and ten clusters.
 
 
-We used three CPU cores to speed up the computation of our correlation coefficient (CCC).
-This allowed us to parallelize the process of generating partitions and computing similarity for each pair of features (genes in our study).
-To further increase the speed of computation, an improved implementation of CCC could make use of graphical processing units (GPUs) [@pmid:338467].
+We used three CPU cores to speed up the computation of our correlation coefficient CCC.
+This allowed us to parallelize the process of generating partitions and computing the similarity of a single pair of features (genes in our study).
+In the future, we could potentially use graphical processing units (GPU) to further speed up the computation of CCC [@doi:10.1186/s12859-016-1044-6].
 
 
-We have created a Python implementation of the CCC, which is optimized with the `numba` library [@doi:10.1145/2833157.2833162].
-This implementation is available in our Github repository [@url:https://github.com/greenelab/clustermatch-gene-expr], as well as a package published in the Python Package Index (PyPI), which can be easily installed.
+We have created a Python implementation of the CCC, which is optimized using the `numba` package [@doi:10.1145/2833157.2833162].
+This implementation is available in our Github repository [@url:https://github.com/greenelab/clustermatch-gene-expr].
+Additionally, we have published a package in the Python Package Index (PyPI) that can be easily installed.
 
 
 ### Gene expression data and preprocessing {#sec:data_gtex}
 
-We used GTEx v8 data for all tissues and normalized it using transcripts per million (TPM).
-We focused our primary analysis on whole blood, which had 755 samples.
-To avoid a bias towards highly-expressed genes, we standardized the data with $log(x + 1)$ and selected the top 5,000 genes with the largest variance.
-We then computed Pearson, Spearman, maximal information coefficient (MIC) and an efficient not-only-linear correlation coefficient (CCC) on the 5,000 genes across all 755 samples on the TPM-normalized data, resulting in a pairwise similarity matrix of size 5,000 x 5,000 [@pmid:30207583].
+We obtained GTEx v8 data for all tissues and normalized it using transcripts per million (TPM).
+We focused our primary analysis on whole blood, which had a good sample size (755).
+To avoid a bias towards highly-expressed genes, we standardized the data with $log(x + 1)$ and then selected the top 5,000 genes based on their variance.
+We then computed Pearson, Spearman, MIC, and CCC correlations on these 5,000 genes across all 755 samples on the TPM-normalized data.
+This generated a pairwise similarity matrix of size 5,000 x 5,000.
 
 
 ### Tissue-specific network analyses using GIANT {#sec:giant}
 
-We used the GIANT database [@url:https://hb.flatironinstitute.org] to access tissue-specific gene networks.
-Our version of GIANT included 987 genome-scale datasets with around 38,000 conditions from 14,000 publications.
-The details on how these networks were built are described in [@doi:10.1038/ng.3259].
-We used gene expression data from the NCBI Gene Expression Omnibus (GEO) [@doi:10.1093/nar/gks1193], protein-protein interactions from BioGRID [@pmc:PMC3531226], IntAct [@doi:10.1093/nar/gkr1088], MINT [@doi:10.1093/nar/gkr930] and MIPS [@pmc:PMC148093], transcription factor regulation from JASPAR [@doi:10.1093/nar/gkp950], and chemical and genetic perturbations from MSigDB [@doi:10.1073/pnas.0506580102].
-We log-transformed the gene expression data, computed the Pearson correlation for each gene pair, normalized it using the Fisher's z transform, and discretized the z-scores into different bins.
-Gold standards for tissue-specific functional relationships were built using expert curation and experimentally derived gene annotations from the Gene Ontology.
-We then trained a naive Bayesian classifier (using C++ implementations from the Sleipnir library [@pmid:18499696]) for each of the 144 tissues, using these gold standards.
-Finally, these classifiers were used to estimate the probability of tissue-specific interactions for each gene pair.
+The final correlation coefficient ($\rho$) was computed as: 
+
+We used gene expression data from the NCBI's Gene Expression Omnibus (GEO) [@doi:10.1093/nar/gks1193], protein-protein interaction (BioGRID [@pmc:PMC3531226], IntAct [@doi:10.1093/nar/gkr1088], MINT [@doi:10.1093/nar/gkr930] and MIPS [@pmc:PMC148093]), transcription factor regulation using binding motifs from JASPAR [@doi:10.1093/nar/gkp950], and chemical and genetic perturbations from MSigDB [@doi:10.1073/pnas.0506580102] to build tissue-specific gene networks of GIANT [@url:https://hb.flatironinstitute.org].
+This GIANT version included 987 genome-scale datasets with approximately 38,000 conditions from around 14,000 publications.
+Details on the building of the networks are described in [@doi:10.1038/ng.3259].
+We used a naive Bayesian classifier (implemented in the Sleipnir library [@pmid:18499696]) to estimate the probability of tissue-specific interactions for each gene pair.
+This classifier was trained with gold standards built from expert curation and experimentally derived gene annotations from the Gene Ontology.
+The final correlation coefficient ($\rho$) was computed as:
 
 
-The average probability of interaction between the genes was computed as $2 \times \frac{\sum_{i=1}^n P_i}{n(n-1)}$, where $P_i$ is the probability of interaction between the genes and $n$ is the number of genes in the network.
-
-For each pair of genes prioritized in our study using GTEx, we used GIANT through HumanBase to obtain a predicted gene network for blood (manually selected to match whole blood in GTEx) and a gene network with an automatically predicted tissue.
-This tissue prediction approach is described in [@doi:10.1101/gr.155697.113], and it uses a machine learning model trained with comprehensive transcriptional data and gold standards of different cell lineages (e.g., macrophages).
-This model is then used to predict other cell lineage-specific genes.
-We included the top 15 genes with the highest probability of interaction with the queried gene pair for each network.
-The average probability of interaction between the genes was computed as $2 \times \frac{\sum_{i=1}^n P_i}{n(n-1)}$, where $P_i$ is the probability of interaction between the genes and $n$ is the number of genes in the network.
+For each gene pair prioritized in our study using GTEx, we used GIANT and HumanBase to obtain two gene networks.
+The first network was manually selected to match the whole blood tissue in GTEx.
+The second network was automatically predicted using a machine learning model described in [@doi:10.1101/gr.155697.113], which was provided by HumanBase web interfaces/services.
+This model was trained using comprehensive transcriptional data, with human-curated markers of different cell lineages (e.g., macrophages) as gold standards.
+Then, these models were used to predict other cell lineage-specific genes.
+Besides the predicted tissue or cell lineage, we computed the average probability of interaction between all genes in the networks retrieved from GIANT.
+We included the top 15 genes with the highest probability of interaction with the queried gene pair for each network, following the default procedure used in GIANT ($P_{ij} \geq 0.5$).
 
 
 ### Maximal Information Coefficient (MIC) {#sec:methods:mic}
 
-We used the Python package `minepy` [@doi:10.1093/bioinformatics/bts707; @url:https://github.com/minepy/minepy] (version 1.2.5) to estimate the MIC coefficient in GTEx v8 (whole blood) with the default parameters `alpha=0.6`, `c=15` and `estimator='mic_e'` (an improved implementation of the original MIC introduced in [@Reshef2016]).
-For parallelization, we used the `pairwise_distances` function from `scikit-learn` [@Sklearn2011].
-Additionally, for our computational complexity analyses (see [Supplementary Material](#sec:time_test)), we ran the original MIC (using parameter `estimator='mic_approx'`) and MIC<sub>e</sub> (`estimator='mic_e'`).
+We used the Python package `minepy` [@doi:10.1093/bioinformatics/bts707; @url:https://github.com/minepy/minepy] (version 1.2.5) to estimate the MIC coefficient.
+For the GTEx v8 (whole blood) dataset, we used MIC<sub>e</sub> (an improved implementation of the original MIC introduced in [@Reshef2016]) with the default parameters `alpha=0.6`, `c=15` and `estimator='mic_e'`.
+To parallelize the computation of MIC, we used the `pairwise_distances` function from `scikit-learn` [@Sklearn2011].
+For our computational complexity analyses (see [Supplementary Material](#sec:time_test)), we ran both the original MIC (with parameter `estimator='mic_approx'`) and MIC<sub>e</sub> (`estimator='mic_e'`).
 
 
 ## References {.page_break_before}
@@ -508,13 +530,12 @@ Additionally, for our computational complexity analyses (see [Supplementary Mate
 
 ### Supplementary Note 1: Comparison with the Maximal Information Coefficient (MIC) on gene expression data {#sec:mic}
 
-We compared all the coefficients in this study with MIC [@pmid:22174245], a popular nonlinear method that can find complex relationships in data.
-This method is, however, very computationally intensive [@doi:10.1098/rsos.201424].
-To further investigate this, we ran MIC<sub>e</sub> (see Methods) on all possible pairwise comparisons of our 5,000 highly variable genes from whole blood in GTEx v8.
-This took 4 days and 19 hours to finish (compared with 9 hours for CCC).
+We compared the correlation coefficients in this study to MIC [@pmid:22174245], a popular nonlinear method that can find complex relationships in data.
+MIC is computationally intensive [@doi:10.1098/rsos.201424], so we ran the modified version (MIC<sub>e</sub>, see Methods) on all possible pairwise comparisons of our 5,000 highly variable genes from whole blood in GTEx v8.
+This took 4 days and 19 hours to finish, compared to 9 hours for CCC.
 We then analyzed the distribution of coefficients (the same as in the main text), shown in Figure @fig:dist_coefs_mic.
-We observed that CCC and MIC behave similarly in this dataset, with essentially the same distribution but only shifted.
-Figure @fig:dist_coefs_mic c shows that these two coefficients have a nearly linear relationship, and both compare very similarly with Pearson and Spearman.
+We found that CCC and MIC behaved similarly in this dataset, with essentially the same distribution but only shifted.
+Figure @fig:dist_coefs_mic c shows that these two coefficients almost linearly relate to each other, and both compare very similarly to Pearson and Spearman correlation coefficients.
 
 ![
 **Distribution of MIC values on gene expression (GTEx v8, whole blood)  and comparison with other methods.**
@@ -527,14 +548,14 @@ Figure @fig:dist_coefs_mic c shows that these two coefficients have a nearly lin
 
 ### Supplementary Note 2: Computational complexity of coefficients {#sec:time_test .page_break_before}
 
-We compared our CCC with other coefficients in terms of computational complexity.
-We found that, while CCC and MIC might identify similar gene pairs in gene expression data (see [here](#sec:mic)), the use of MIC in large datasets remains limited due to its very long computation time, despite some methodological/implementation improvements [@doi:10.1093/bioinformatics/bts707; @doi:10.1371/journal.pone.0157567; @doi:10.4137/EBO.S13121; @doi:10.1038/srep06662; @doi:10.1098/rsos.201424].
-The original MIC implementation uses ApproxMaxMI, a computationally demanding heuristic estimator [@doi:10.1126/science.1205438].
-Recently, a more efficient implementation called MIC<sub>e</sub> was proposed [@Reshef2016].
-These two MIC estimators are provided by the `minepy` package [@doi:10.1093/bioinformatics/bts707], a C implementation available for Python.
-To compare the computation time of all these coefficients, we used randomly generated variables of different sizes, which simulates a gene expression data scenario with different numbers of conditions.
-CCC allows for easy parallelization of the computation of a single gene pair (see [Methods](#sec:ccc_algo)), so we tested the cases using 1 and 3 CPU cores.
-The results are shown in Figure @fig:time_test, which displays the time in seconds in log scale.
+We compared CCC with other correlation coefficients in terms of computational complexity.
+We simulated a gene expression data scenario with different numbers of conditions by generating random variables of different sizes.
+Figure @fig:time_test shows the time in seconds (in log scale) for each coefficient.
+CCC is the fastest in most cases, and its performance can be further improved by using 1 or 3 CPU cores.
+Other coefficients, such as MIC, might identify similar gene pairs in gene expression data [@doi:10.1093/bioinformatics/bts707; @doi:10.1371/journal.pone.0157567; @doi:10.4137/EBO.S13121; @doi:10.1038/srep06662; @doi:10.1098/rsos.201424], but their use in large datasets is limited due to their long computation time.
+This is mainly because the original MIC implementation uses ApproxMaxMI, a computationally demanding heuristic estimator [@doi:10.1126/science.1205438].
+Recently, a more efficient implementation called MIC<sub>e</sub> was proposed [@Reshef2016], and is provided by the `minepy` package [@doi:10.1093/bioinformatics/bts707], a C implementation available for Python.
+CCC allows us to easily parallelize the computation of a single gene pair (see [Methods](#sec:ccc_algo)), which is not possible with the other coefficients.
 
 ![
 **Computational complexity of all correlation coefficients on simulated data.**
@@ -544,14 +565,15 @@ CCC was run using 1 and 3 CPU cores.
 MIC and MIC<sub>e</sub> did not finish running in a reasonable amount of time for data sizes of 10,000 and 100,000, respectively.
 ](images/coefs_comp/time_test/time_test-main.svg "Computation time"){#fig:time_test width="55%"}
 
-Figure \ref{fig:time_perf} shows the average time performance of the different correlation coefficients.
+As shown in Figure \ref{fig:runtime}, the new correlation coefficient (NLC) was orders of magnitude faster than the nonlinear ones, except for very small data sizes.
 
-Pearson and Spearman correlation coefficients are the fastest, since they only require computing basic summary statistics from the data.
-CCC was faster than the two MIC variations, except in very small data sizes, where it was up to two orders of magnitude slower.
-This is because CCC was implemented in Python (optimized with `numba`) while the MIC variants were implemented in C [@doi:10.1093/bioinformatics/bts707], a high-performance programming language.
-With a data size of a million, the multi-core CCC was twice as fast as the single-core CCC.
-This suggests that using more advanced processing units (such as GPUs) could make CCC reach speeds closer to Pearson.
-Figure \ref{fig:time_perf} shows the average time performance of the different correlation coefficients.
+We expected Pearson and Spearman to be the fastest, as they only need to calculate basic summary statistics from the data.
+For example, Pearson is three orders of magnitude faster than CCC.
+Among the nonlinear coefficients, CCC was faster than the two MIC variations (up to two orders of magnitude), with the exception of very small data sizes.
+The difference is significant as both MIC variants were implemented in the high-performance programming language C [@doi:10.1093/bioinformatics/bts707], while CCC was implemented in Python (optimized with `numba`).
+When data size was a million, the multi-core CCC was twice as fast as the single-core CCC.
+This suggests that more advanced processing units (such as GPUs) could be used for new implementations and help CCC reach speeds closer to Pearson (see Figure \ref{fig:runtime}).
+Our new correlation coefficient (NLC) was orders of magnitude faster than the nonlinear ones, except for very small data sizes.
 
 
 
@@ -580,9 +602,9 @@ Figure \ref{fig:time_perf} shows the average time performance of the different c
 | *PYGM* | 0.02 | 0.04 | 0.14 | Skeletal muscle<!-- $rowspan="2" --> | 0.01 | 0.02 | 0.04 |
 | *TPM2* | 0.05 | 0.56 | 0.80 | 0.01 | 0.28 | 0.47<!-- $removenext="2" --> |
 
-We present in Table @tbl:giant:weights the network statistics of six gene pairs shown in Figure @fig:upsetplot_coefs b for blood and predicted cell types.
-The table lists only the gene pairs included in the GIANT models.
-For each gene in the pair (first column), the table provides the minimum, average and maximum interaction coefficients with the other genes in the network.
+The table below shows the network statistics of six gene pairs, as presented in Figure @fig:upsetplot_coefs b, for both blood and predicted cell types.
+It includes only those gene pairs present in GIANT models.
+For each gene in the pair (first column), the table provides the minimum, average, and maximum interaction coefficients with other genes in the network.{#tbl:giant:weights}
 
 
 <!-- ![
@@ -601,3 +623,4 @@ All these analyses can be performed online using the following links:
 *PYGM* - *TPM2* [@url:https://hb.flatironinstitute.org/gene/5837+7169].
 The GIANT web-server was accessed on April 4, 2022.
 ](images/coefs_comp/giant_networks/auto_selected_tissues/main.svg "GIANT network interaction"){#fig:giant_gene_pairs:pred_tissue width="100%"} -->
+
