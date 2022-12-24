@@ -47,7 +47,7 @@ jobs:
       # Set SPELLCHECK to true/false for whether to check spelling in this action.
       # For workflow dispatch jobs, this SPELLCHECK setting will be overridden by the user input.
       SPELLCHECK: false
-      REVISE_MANUSCRIPT: true
+      REVISE_MANUSCRIPT: false
     defaults:
       run:
         shell: bash --login {0}
