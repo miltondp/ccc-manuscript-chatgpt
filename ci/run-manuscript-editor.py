@@ -20,7 +20,7 @@ if __name__ == "__main__":
     output_folder = (Path("tmp") / "chatgpt-editor-output").resolve()
     output_folder.mkdir(parents=True, exist_ok=True)
 
-    me.revise_manuscript(output_folder, model)
+    me.revise_manuscript(output_folder, model, debug=True)
 
     # move the revised manuscript back to the content folder
     for f in output_folder.glob("*"):
