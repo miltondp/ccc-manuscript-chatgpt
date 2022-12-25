@@ -10,6 +10,7 @@ on:
 jobs:
   chatgpt-revise:
     name: GPT Revise
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
