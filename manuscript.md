@@ -25,8 +25,8 @@ header-includes: |
   <meta name="dc.date" content="2022-12-25" />
   <meta name="citation_publication_date" content="2022-12-25" />
   <meta property="article:published_time" content="2022-12-25" />
-  <meta name="dc.modified" content="2022-12-25T00:07:08+00:00" />
-  <meta property="article:modified_time" content="2022-12-25T00:07:08+00:00" />
+  <meta name="dc.modified" content="2022-12-25T00:08:02+00:00" />
+  <meta property="article:modified_time" content="2022-12-25T00:08:02+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://miltondp.github.io/ccc-manuscript-chatgpt/" />
   <meta name="citation_pdf_url" content="https://miltondp.github.io/ccc-manuscript-chatgpt/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://miltondp.github.io/ccc-manuscript-chatgpt/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://miltondp.github.io/ccc-manuscript-chatgpt/v/14ed51aeeff0be3d61f27a66cb623fcabd091c4e/" />
-  <meta name="manubot_html_url_versioned" content="https://miltondp.github.io/ccc-manuscript-chatgpt/v/14ed51aeeff0be3d61f27a66cb623fcabd091c4e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://miltondp.github.io/ccc-manuscript-chatgpt/v/14ed51aeeff0be3d61f27a66cb623fcabd091c4e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://miltondp.github.io/ccc-manuscript-chatgpt/v/a4cd120b6e6ba9a81dbc34618b102f6e267d3ff8/" />
+  <meta name="manubot_html_url_versioned" content="https://miltondp.github.io/ccc-manuscript-chatgpt/v/a4cd120b6e6ba9a81dbc34618b102f6e267d3ff8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://miltondp.github.io/ccc-manuscript-chatgpt/v/a4cd120b6e6ba9a81dbc34618b102f6e267d3ff8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -82,9 +82,9 @@ _This is a testing version edited by an AI bot._
 
 <small><em>
 This manuscript
-([permalink](https://miltondp.github.io/ccc-manuscript-chatgpt/v/14ed51aeeff0be3d61f27a66cb623fcabd091c4e/))
+([permalink](https://miltondp.github.io/ccc-manuscript-chatgpt/v/a4cd120b6e6ba9a81dbc34618b102f6e267d3ff8/))
 was automatically generated
-from [miltondp/ccc-manuscript-chatgpt@14ed51a](https://github.com/miltondp/ccc-manuscript-chatgpt/tree/14ed51aeeff0be3d61f27a66cb623fcabd091c4e)
+from [miltondp/ccc-manuscript-chatgpt@a4cd120](https://github.com/miltondp/ccc-manuscript-chatgpt/tree/a4cd120b6e6ba9a81dbc34618b102f6e267d3ff8)
 on December 25, 2022.
 </em></small>
 
