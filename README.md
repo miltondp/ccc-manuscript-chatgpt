@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/miltondp/ccc-manuscript-chatgpt/tree/gh-pages) branch hosts the contents of this directory at <https://miltondp.github.io/ccc-manuscript-chatgpt/>.
-The permalink for this webpage version is <https://miltondp.github.io/ccc-manuscript-chatgpt/v/801b64995e0d188a372eff0f2bba2851ce7bcedb/>.
+The permalink for this webpage version is <https://miltondp.github.io/ccc-manuscript-chatgpt/v/92b3e5a25fab9262c521a5accb348e1bb706b92e/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://miltondp.github.io/ccc-manuscript-chatgpt/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`801b64995e0d188a372eff0f2bba2851ce7bcedb`](https://github.com/miltondp/ccc-manuscript-chatgpt/commit/801b64995e0d188a372eff0f2bba2851ce7bcedb).
+[`92b3e5a25fab9262c521a5accb348e1bb706b92e`](https://github.com/miltondp/ccc-manuscript-chatgpt/commit/92b3e5a25fab9262c521a5accb348e1bb706b92e).
