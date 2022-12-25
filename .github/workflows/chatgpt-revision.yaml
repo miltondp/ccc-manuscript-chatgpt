@@ -12,18 +12,15 @@ jobs:
     name: GPT Revise
     steps:
       - name: Checkout Repo
-      - uses: actions/checkout@v3
+        uses: actions/checkout@v3
         with: 
           ref: ${{ inputs.branch }} 
-
       - name: Install Manubot ChatGPT editor
         run: bash ci/install-manuscript-editor.sh
-
       - name: Revise manuscript
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python ci/run-manuscript-editor.py
-
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
         with:
@@ -31,4 +28,3 @@ jobs:
           commit-message: 'GPT revised manuscript'
           title: 'GPT used to revise manuscript'
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
-
